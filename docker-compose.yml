@@ -1,0 +1,8 @@
+shadowsocks:
+  image: nerdneils/shadowsocks-libev-with-simple-obfs-docker
+  ports:
+    - "8843:8843/tcp"
+    - "8843:8843/udp"
+  volumes:
+    - "./ss.json:/etc/ss.json"
+  restart: always
