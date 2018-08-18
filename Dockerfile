@@ -27,7 +27,7 @@ RUN set -ex \
     git \
     # Clone the source
     && cd /tmp \
-    && git clone https://github.com/shadowsocks/shadowsocks-libev.git \
+    && git clone --recursive  --depth=1 https://github.com/shadowsocks/shadowsocks-libev.git \
     && git clone  --recursive  --depth=1 https://github.com/shadowsocks/simple-obfs.git \
     # Build & install Shadowsocks
     && cd /tmp/shadowsocks-libev \
