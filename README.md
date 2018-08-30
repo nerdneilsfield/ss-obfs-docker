@@ -26,3 +26,7 @@ sudo docker -it -d --name shadowsocks-libev  -p [your port]:8843/udp -p [yourpor
 
 - 修改 `ss.json` 文件。
 - 运行 `docker-compose`, 使用 `sudo docker-compose up -d` 命令。
+
+## Client 使用方法
+
+`Client` 目录下提供了 Client 的 `Dockerfile`, 与 Server 的唯一不同是最后的命令是 `ss-local` 而不是 `ss-server`。
